@@ -25,6 +25,39 @@
     <header class="header">
       <div class="container header__container">
         <a href="./index.html" class="logo" lang="en"><span class="logo-web">Web</span>Studio</a>
+        <button class="menu-button" name="choise" value="mainbutton" type="button" data-modal-open1>
+          <svg class="header-contact__icon" width="40" height="40">
+                <use xlink:href="./img/symbol-defs.svg#icon-menu">
+                  </svg>
+        </button>
+        <div class="backdrop is-hidden" data-modal1>
+          <div class="mobmodal-modal">
+            <button type="button" class="modal__btn" data-modal-close1>
+              <svg class="modal-btn__icon" width="18" height="18">
+                <use xlink:href="./img/symbol-defs.svg#close"></use>
+              </svg>
+            </button>
+          <ul class="mobmodal-nav">
+            <li class="mobmodal-nav__item"><a href="./index.html" class="mobmodal-nav__link">Студія</a></li>
+            <li class="mobmodal-nav__item"><a href="./portfolio.html" class="mobmodal-nav__link">Портфоліо</a></li>
+            <li class="mobmodal-nav__item"><a href="" class="mobmodal-nav__link">Контакти</a></li>
+          </ul>
+        <ul class="mobmodal-adr">
+          <li class="mobmodal-adr__item">
+            <a href="mailto:info@devstudio.com" class="mobmodal-adr__link">info@devstudio.com</a>
+          </li>
+          <li class="mobmodal-adr__item">
+            <a href="tel:+380961111111" class="mobmodal-adr__link">+38 096 111 11 11</a>
+          </li>
+        </ul>
+        <ul class="mobmodal">
+          <li class="mobmodal__item"><a class="mobmodal__link">Instagram</a></li>
+          <li class="mobmodal__item"><a class="mobmodal__link">Twitter</a></li>
+          <li class="mobmodal__item"><a class="mobmodal__link">Facebook</a></li>
+          <li class="mobmodal__item"><a class="mobmodal__link">LinkedIn</a></li>
+        </ul>
+          </div>
+        </div>
         <nav>
           <ul class="header__list">
             <li class="header__item"><a href="./index.html" class="header__link--act">Студія</a></li>
@@ -36,15 +69,13 @@
           <li class="header-contact__item">
             <a href="mailto:info@devstudio.com" class="header-contact__link"
               ><svg class="header-contact__icon" width="16" height="12">
-                <use xlink:href="./img/img-dz-four/symbol-defs.svg#email"></use></svg
-              >info@devstudio.com</a
+                <use xlink:href="./img/symbol-defs.svg#email"></use></svg>info@devstudio.com</a
             >
           </li>
           <li class="header-contact__item">
             <a href="tel:+380961111111" class="header-contact__link"
               ><svg class="header-contact__icon" width="10" height="16">
-                <use xlink:href="./img/img-dz-four/symbol-defs.svg#phone"></use></svg
-              >+38 096 111 11 11</a
+                <use xlink:href="./img/symbol-defs.svg#phone"></use></svg>+38 096 111 11 11</a
             >
           </li>
         </ul>
@@ -53,7 +84,7 @@
     <!-- Секция герой -->
     <main class="main-studio">
       <section class="hero bg-hero">
-        <div class="hero__container">
+        <div class="container hero__container">
           <h1 class="hero__slogan">Ефективні рішення для вашого бізнесу</h1>
           <button class="hero__button" name="choise" value="mainbutton" type="button" data-modal-open>Замовити послугу</button>
         </div>
@@ -62,7 +93,7 @@
           <div class="modal">
             <button type="button" class="modal__btn" data-modal-close>
               <svg class="modal-btn__icon" width="18" height="18">
-                <use xlink:href="./img/img-dz-four/symbol-defs.svg#close"></use>
+                <use xlink:href="./img/symbol-defs.svg#close"></use>
               </svg>
             </button>
             <form class="register-form" name="register-form">
@@ -73,7 +104,7 @@
                   <span class="register-form__name">Ім'я</span>
                   <input class="register-form__input" type="text" name="text" />
                   <svg class="register-form__icon" width="18" height="18">
-                    <use href="./img/img-dz-four/symbol-defs.svg#icon-man"></use>
+                    <use href="./img/symbol-defs.svg#icon-man"></use>
                   </svg>
                 </label>
 
@@ -81,7 +112,7 @@
                   <span class="register-form__name">Телефон</span>
                   <input class="register-form__input" type="tel" name="tel" />
                   <svg class="register-form__icon" width="18" height="18">
-                    <use href="./img/img-dz-four/symbol-defs.svg#icon-phone-black"></use>
+                    <use href="./img/symbol-defs.svg#icon-phone-black"></use>
                   </svg>
                 </label>
 
@@ -89,7 +120,7 @@
                   <span class="register-form__name">Пошта</span>
                   <input class="register-form__input" type="email" name="email" />
                   <svg class="register-form__icon" width="18" height="18">
-                    <use href="./img/img-dz-four/symbol-defs.svg#icon-email-black"></use>
+                    <use href="./img/symbol-defs.svg#icon-email-black"></use>
                   </svg>
                 </label>
 
@@ -102,8 +133,8 @@
               <label class="register-form__agreement">
                 <input class="register-form__checkbox register-form__visually-hidden" type="checkbox" name="privat" id="privat" />
                 <svg class="register-form__agreement-icons" width="18" height="18">
-                  <use class="register-form__icon-checked" href="./img/img-dz-four/symbol-defs.svg#icon-icon-check"></use>
-                  <use class="register-form__icon-unchecked" href="./img/img-dz-four/symbol-defs.svg#icon-Vector"></use>
+                  <use class="register-form__icon-checked" href="./img/symbol-defs.svg#icon-icon-check"></use>
+                  <use class="register-form__icon-unchecked" href="./img/symbol-defs.svg#icon-Vector"></use>
                 </svg>
                 <span class="register-form__desc">Погоджуюся з розсилкою та приймаю <a class="register-form__link" href="#">Умови договору</a></span>
               </label>
@@ -119,7 +150,7 @@
             <li class="feature__item">
               <div class="feature__directions-link">
                 <svg class="feature__directions-icon" width="70" height="70">
-                  <use xlink:href="./img/img-dz-four/symbol-defs.svg#antenna"></use>
+                  <use xlink:href="./img/symbol-defs.svg#antenna"></use>
                 </svg>
               </div>
               <h3 class="feature__title">Увага до деталей</h3>
@@ -128,7 +159,7 @@
             <li class="feature__item">
               <div class="feature__directions-link">
                 <svg class="feature__directions-icon" width="70" height="70">
-                  <use xlink:href="./img/img-dz-four/symbol-defs.svg#clock"></use>
+                  <use xlink:href="./img/symbol-defs.svg#clock"></use>
                 </svg>
               </div>
               <h3 class="feature__title">Пунктуальність</h3>
@@ -137,7 +168,7 @@
             <li class="feature__item">
               <div class="feature__directions-link">
                 <svg class="feature__directions-icon" width="70" height="70">
-                  <use xlink:href="./img/img-dz-four/symbol-defs.svg#diagram"></use>
+                  <use xlink:href="./img/symbol-defs.svg#diagram"></use>
                 </svg>
               </div>
               <h3 class="feature__title">Планування</h3>
@@ -146,7 +177,7 @@
             <li class="feature__item">
               <div class="feature__directions-link">
                 <svg class="feature__directions-icon" width="70" height="70">
-                  <use xlink:href="./img/img-dz-four/symbol-defs.svg#astronaut"></use>
+                  <use xlink:href="./img/symbol-defs.svg#astronaut"></use>
                 </svg>
               </div>
               <h3 class="feature__title">Сучасні технології</h3>
@@ -161,19 +192,19 @@
           <ul class="services__list">
             <li class="services__item">
               <div class="services__box-imgtext">
-                <img src="./img/a.jpg" class="services__works-foto" alt="чоловічі руки пишуть код" width="370" height="294" />
+                <img src="./img/desktop/a.jpg" class="services__works-foto" alt="чоловічі руки пишуть код" width="370" height="294" />
                 <p class="services__imgtext">Десктопні додатки</p>
               </div>
             </li>
             <li class="services__item">
               <div class="services__box-imgtext">
-                <img src="./img/b.jpg" class="services__works-foto" alt="жіночі руки тримають телефон" width="370" height="294" />
+                <img src="./img/desktop/b.jpg" class="services__works-foto" alt="жіночі руки тримають телефон" width="370" height="294" />
                 <p class="services__imgtext">Мобільні додатки</p>
               </div>
             </li>
             <li class="services__item">
               <div class="services__box-imgtext">
-                <img src="./img/c.jpg" class="services__works-foto" alt="жіночі руки тримають планшет та малюють на ньому" width="370" height="294" />
+                <img src="./img/desktop/c.jpg" class="services__works-foto" alt="жіночі руки тримають планшет та малюють на ньому" width="370" height="294" />
                 <p class="services__imgtext">Дизайнерські рішення</p>
               </div>
             </li>
@@ -181,11 +212,33 @@
         </div>
       </section>
       <section class="team">
-        <div class="container">
+        <div class="container team__container">
           <h3 class="team__title">Наша команда</h3>
           <ul class="team__list">
             <li class="team__item">
-              <img src="./img/img3.jpg" class="team__foto" alt="світловолосий чоловік в окулярах та червоній сорочці" width="270" height="260" />
+               <picture>
+                <source
+                  srcset="./img/mobile/img1.jpg 1x,
+                  ./img/mobile/img1@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./img/tablet/img1.jpg 1x,
+                  ./img/tablet/img1@2x.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./img/desktop/img3.jpg   1x,
+                    ./img/desktop/img3.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img src="./img/desktop/img3.jpg" class="team__foto" alt="світловолосий чоловік в окулярах та червоній сорочці" />
+              </picture>
+              
               <div class="team__box">
                 <h3 class="team__works-name">Ігор Дем'яненко</h3>
                 <p class="team__works-profession" lang="en">Product Designer</p>
@@ -193,28 +246,28 @@
                   <li class="team__socnet-item">
                     <a class="team__socnet-link" href="#">
                       <svg class="team__socnet-icon" width="20" height="20">
-                        <use href="./img/img-dz-four/symbol-defs.svg#instagram"></use>
+                        <use href="./img/symbol-defs.svg#instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="team__socnet-item">
                     <a class="team__socnet-link" href="#">
                       <svg class="team__socnet-icon" width="20" height="20">
-                        <use href="./img/img-dz-four/symbol-defs.svg#twitter"></use>
+                        <use href="./img/symbol-defs.svg#twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="team__socnet-item">
                     <a class="team__socnet-link" href="#">
                       <svg class="team__socnet-icon" width="20" height="20">
-                        <use href="./img/img-dz-four/symbol-defs.svg#facebook"></use>
+                        <use href="./img/symbol-defs.svg#facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="team__socnet-item">
                     <a class="team__socnet-link" href="#">
                       <svg class="team__socnet-icon" width="20" height="20">
-                        <use href="./img/img-dz-four/symbol-defs.svg#linkedin"></use>
+                        <use href="./img/symbol-defs.svg#linkedin"></use>
                       </svg>
                     </a>
                   </li>
@@ -222,36 +275,57 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./img/img4.jpg" class="team__foto" alt="світловолоса жінка в окулярах та чорному жакеті" width="270" height="260" />
-              <div class="team__box">
+              <picture>
+                <source
+                  srcset="./img/mobile/img2.jpg 1x,
+                  ./img/mobile/img2@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./img/tablet/img2.jpg 1x,
+                  ./img/tablet/img2@2x.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./img/desktop/img4.jpg   1x,
+                    ./img/desktop/img4.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img src="./img/desktop/img4.jpg" class="team__foto" alt="світловолосий чоловік в окулярах та червоній сорочці" />
+              </picture>             
+               <div class="team__box">
                 <h3 class="team__works-name">Ольга Рєпіна</h3>
                 <p class="team__works-profession" lang="en">Frontend Developer</p>
                 <ul class="team__socnet-list">
                   <li class="team__socnet-item">
                     <a class="team__socnet-link" href="#">
                       <svg class="team__socnet-icon" width="20" height="20">
-                        <use href="./img/img-dz-four/symbol-defs.svg#instagram"></use>
+                        <use href="./img/symbol-defs.svg#instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="team__socnet-item">
                     <a class="team__socnet-link" href="#">
                       <svg class="team__socnet-icon" width="20" height="20">
-                        <use href="./img/img-dz-four/symbol-defs.svg#twitter"></use>
+                        <use href="./img/symbol-defs.svg#twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="team__socnet-item">
                     <a class="team__socnet-link" href="#">
                       <svg class="team__socnet-icon" width="20" height="20">
-                        <use href="./img/img-dz-four/symbol-defs.svg#facebook"></use>
+                        <use href="./img/symbol-defs.svg#facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="team__socnet-item">
                     <a class="team__socnet-link" href="#">
                       <svg class="team__socnet-icon" width="20" height="20">
-                        <use href="./img/img-dz-four/symbol-defs.svg#linkedin"></use>
+                        <use href="./img/symbol-defs.svg#linkedin"></use>
                       </svg>
                     </a>
                   </li>
@@ -259,7 +333,28 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./img/img5.jpg" class="team__foto" alt="світловолосий чоловік в білій сорочці" width="270" height="260" />
+               <picture>
+                <source
+                  srcset="./img/mobile/img3.jpg 1x,
+                  ./img/mobile/img3@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./img/tablet/img3.jpg 1x,
+                  ./img/tablet/img3@2x.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./img/desktop/img5.jpg   1x,
+                    ./img/desktop/img5.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img src="./img/desktop/img5.jpg" class="team__foto" alt="світловолосий чоловік в окулярах та червоній сорочці" />
+              </picture>              
               <div class="team__box">
                 <h3 class="team__works-name">Микола Тарасов</h3>
                 <p class="team__works-profession" lang="en">Marketing</p>
@@ -267,28 +362,28 @@
                   <li class="team__socnet-item">
                     <a class="team__socnet-link" href="#">
                       <svg class="team__socnet-icon" width="20" height="20">
-                        <use href="./img/img-dz-four/symbol-defs.svg#instagram"></use>
+                        <use href="./img/symbol-defs.svg#instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="team__socnet-item">
                     <a class="team__socnet-link" href="#">
                       <svg class="team__socnet-icon" width="20" height="20">
-                        <use href="./img/img-dz-four/symbol-defs.svg#twitter"></use>
+                        <use href="./img/symbol-defs.svg#twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="team__socnet-item">
                     <a class="team__socnet-link" href="#">
                       <svg class="team__socnet-icon" width="20" height="20">
-                        <use href="./img/img-dz-four/symbol-defs.svg#facebook"></use>
+                        <use href="./img/symbol-defs.svg#facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="team__socnet-item">
                     <a class="team__socnet-link" href="#">
                       <svg class="team__socnet-icon" width="20" height="20">
-                        <use href="./img/img-dz-four/symbol-defs.svg#linkedin"></use>
+                        <use href="./img/symbol-defs.svg#linkedin"></use>
                       </svg>
                     </a>
                   </li>
@@ -296,36 +391,56 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./img/img6.jpg" class="team__foto" alt="темноволосий чоловік в окулярах та чорній сорочці" width="270" height="260" />
-              <div class="team__box">
+              <picture>
+                <source
+                  srcset="./img/mobile/img4.jpg 1x,
+                  ./img/mobile/img4@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./img/tablet/img4.jpg 1x,
+                  ./img/tablet/img4@2x.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./img/desktop/img6.jpg   1x,
+                    ./img/desktop/img6.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img src="./img/desktop/img6.jpg" class="team__foto" alt="світловолосий чоловік в окулярах та червоній сорочці" />
+              </picture>              <div class="team__box">
                 <h3 class="team__works-name">Михайло Єрмаков</h3>
                 <p class="team__works-profession" lang="en">UI Designer</p>
                 <ul class="team__socnet-list">
                   <li class="team__socnet-item">
                     <a class="team__socnet-link" href="#">
                       <svg class="team__socnet-icon" width="20" height="20">
-                        <use href="./img/img-dz-four/symbol-defs.svg#instagram"></use>
+                        <use href="./img/symbol-defs.svg#instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="team__socnet-item">
                     <a class="team__socnet-link" href="#">
                       <svg class="team__socnet-icon" width="20" height="20">
-                        <use href="./img/img-dz-four/symbol-defs.svg#twitter"></use>
+                        <use href="./img/symbol-defs.svg#twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="team__socnet-item">
                     <a class="team__socnet-link" href="#">
                       <svg class="team__socnet-icon" width="20" height="20">
-                        <use href="./img/img-dz-four/symbol-defs.svg#facebook"></use>
+                        <use href="./img/symbol-defs.svg#facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="team__socnet-item">
                     <a class="team__socnet-link" href="#">
                       <svg class="team__socnet-icon" width="20" height="20">
-                        <use href="./img/img-dz-four/symbol-defs.svg#linkedin"></use>
+                        <use href="./img/symbol-defs.svg#linkedin"></use>
                       </svg>
                     </a>
                   </li>
@@ -342,45 +457,46 @@
             <li class="client__item">
               <a class="client__link" href="#"
                 ><svg class="client__logo" width="106" height="60">
-                  <use href="./img/img-dz-four/symbol-defs.svg#Logo1"></use></svg
+                  <use href="./img/symbol-defs.svg#Logo1"></use></svg
               ></a>
             </li>
             <li class="client__item">
               <a class="client__link" href="#"
                 ><svg class="client__logo" width="106" height="60">
-                  <use href="./img/img-dz-four/symbol-defs.svg#Logo2"></use></svg
+                  <use href="./img/symbol-defs.svg#Logo2"></use></svg
               ></a>
             </li>
             <li class="client__item">
               <a class="client__link" href="#"
                 ><svg class="client__logo" width="106" height="60">
-                  <use href="./img/img-dz-four/symbol-defs.svg#Logo3"></use></svg
+                  <use href="./img/symbol-defs.svg#Logo3"></use></svg
               ></a>
             </li>
             <li class="client__item">
               <a class="client__link" href="#"
                 ><svg class="client__logo" width="106" height="60">
-                  <use href="./img/img-dz-four/symbol-defs.svg#Logo4"></use></svg
+                  <use href="./img/symbol-defs.svg#Logo4"></use></svg
               ></a>
             </li>
             <li class="client__item">
               <a class="client__link" href="#"
                 ><svg class="client__logo" width="106" height="60">
-                  <use href="./img/img-dz-four/symbol-defs.svg#Logo5"></use></svg
+                  <use href="./img/symbol-defs.svg#Logo5"></use></svg
               ></a>
             </li>
             <li class="client__item">
               <a class="client__link" href="#"
                 ><svg class="client__logo" width="106" height="60">
-                  <use href="./img/img-dz-four/symbol-defs.svg#Logo6"></use></svg
+                  <use href="./img/symbol-defs.svg#Logo6"></use></svg
               ></a>
             </li>
           </ul>
         </div>
       </section>
+      
     </main>
 
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer__container">
         <div>
           <a href="./index.html" class="footer__logo" lang="en"><span class="logo-web">Web</span>Studio</a>
@@ -398,28 +514,28 @@
             <li class="footer__soc-item">
               <a href="#" class="footer__soc-link">
                 <svg class="footer__soc-icon" width="20" height="20">
-                  <use xlink:href="./img/img-dz-four/symbol-defs.svg#instagram"></use>
+                  <use xlink:href="./img/symbol-defs.svg#instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="footer__soc-item">
               <a href="#" class="footer__soc-link">
                 <svg class="footer__soc-icon" width="20" height="20">
-                  <use xlink:href="./img/img-dz-four/symbol-defs.svg#twitter"></use>
+                  <use xlink:href="./img/symbol-defs.svg#twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="footer__soc-item">
               <a href="#" class="footer__soc-link">
                 <svg class="footer__soc-icon" width="20" height="20">
-                  <use xlink:href="./img/img-dz-four/symbol-defs.svg#facebook"></use>
+                  <use xlink:href="./img/symbol-defs.svg#facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="footer__soc-item">
               <a href="#" class="footer__soc-link">
                 <svg class="footer__soc-icon" width="20" height="20">
-                  <use xlink:href="./img/img-dz-four/symbol-defs.svg#linkedin"></use>
+                  <use xlink:href="./img/symbol-defs.svg#linkedin"></use>
                 </svg>
               </a>
             </li>
@@ -431,13 +547,14 @@
             <input type="email" name="email" class="footer__subscribe-email" placeholder="E-mail" />
             <button type="submit" class="footer__subscribe-button">
               Підписатися<svg width="24" height="24" class="footer__subscribe-img">
-                <use xlink:href="./img/img-dz-four/symbol-defs.svg#icon-icon-send"></use>
+                <use xlink:href="./img/symbol-defs.svg#icon-icon-send"></use>
               </svg>
             </button>
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
+    
     <script src="./js/modal.js"></script>
   </body>
 </html>
